@@ -1,0 +1,6 @@
+[user]
+	name = Khalid A. Khalil
+	email = 1518813+khesayed@users.noreply.github.com
+	signingkey = A4026CFAD8396BF53994211FF2E8AB6AC2A4FE0E
+[core]
+	excludesfile = ~/.gitignore_global
