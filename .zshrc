@@ -113,3 +113,12 @@ export GPG_TTY=$(tty)
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+
+
+# Custom Functions
+# Slugify strings
+slugify () {
+    echo "$1" | iconv -c -t ascii//TRANSLIT | sed -E 's/[~^]+//g' | sed -E 's/[^a-zA-Z0-9]+/-/g' | sed -E 's/^-+|-+$//g' | tr A-Z a-z
+}
+
