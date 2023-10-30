@@ -111,10 +111,6 @@ PROMPT='${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[green]%}%~%{$res
 export GPG_TTY=$(tty)
 
 
-# Load Angular CLI autocompletion.
-source <(ng completion script)
-
-
 
 # Custom Functions
 # Slugify strings

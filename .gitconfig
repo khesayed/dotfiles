@@ -4,3 +4,6 @@
 	signingkey = A4026CFAD8396BF53994211FF2E8AB6AC2A4FE0E
 [core]
 	excludesfile = ~/.gitignore_global
+	trustctime = false
+[branch]
+	autosetuprebase = always
