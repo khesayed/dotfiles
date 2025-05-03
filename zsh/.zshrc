@@ -1,4 +1,13 @@
-# .zshrc
+# HISTFILE is used by interactive shells only. Plus, 
+# non-interactive shells & external commands don't need this var. 
+# Hence, we put it in your .zshrc file, since that's sourced for 
+# each interactive shell, and don't export it.
+HISTFILE="$XDG_CACHE_HOME/zsh/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
+HISTIGNORE="exit:clear"
+
+export XDG_CONFIG_HOME XDG_CACHE_HOME
 
 # Completion official documentations
 # https://zsh.sourceforge.io/Doc/Release/Completion-System.html#Completion-System
@@ -64,10 +73,6 @@ alias ....='cd ../../..'
 alias rm='rm -rf -i'
 alias v='vim'
 alias ll='ls -A -lh --color=always | awk '\''{printf "\033[0m%-10s %-20s %s\n", $5, $6" "$7" "$8, $9}'\'''
-alias gst='git status'
-alias vsc='code .'
-# Reloads zsh configuration
-alias zreload='source ~/.config/zsh/.zshrc && echo "🔄 Zsh reloaded!"'
 
 # -----------
 # KEYBINDING
@@ -91,9 +96,7 @@ PROMPT='%F{195} %n%f%F{250} in%f%F{115} %1~ %f${vcs_info_msg_0_}
 # -----------
 # PLUGINS
 # -----------
-
-# syntax highlighting
-[[ -f "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && source "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-
-# autosuggestions
-[[ -f "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+# Source zsh-autosuggestions
+[[ -f "$ZDOTDIR/plugins/zsh-autosuggestions.zsh" ]] && source "$ZDOTDIR/plugins/zsh-autosuggestions.zsh"
+# Source zsh-syntax-highlighting
+[[ -f "$ZDOTDIR/plugins/zsh-syntax-highlighting.zsh" ]] && source "$ZDOTDIR/plugins/zsh-syntax-highlighting.zsh"
