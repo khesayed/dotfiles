@@ -9,3 +9,4 @@
 # outside of $HOME. 
 ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 NVM_DIR="$XDG_CONFIG_HOME/nvm"
+GIT_CONFIG="$XDG_CONFIG_HOME/git/.gitconfig"
