@@ -97,6 +97,6 @@ PROMPT='%F{195} %n%f%F{250} in%f%F{115} %1~ %f${vcs_info_msg_0_}
 # PLUGINS
 # -----------
 # Source zsh-autosuggestions
-[[ -f "$ZDOTDIR/plugins/zsh-autosuggestions.zsh" ]] && source "$ZDOTDIR/plugins/zsh-autosuggestions.zsh"
+[[ -f "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 # Source zsh-syntax-highlighting
-[[ -f "$ZDOTDIR/plugins/zsh-syntax-highlighting.zsh" ]] && source "$ZDOTDIR/plugins/zsh-syntax-highlighting.zsh"
+[[ -f "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && source "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
