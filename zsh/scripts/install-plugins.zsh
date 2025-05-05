@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+# chmod +x install-plugins.zsh
+
 PLUGIN_DIR="$ZDOTDIR/plugins"
 ZSHRC="$ZDOTDIR/.zshrc"
 
