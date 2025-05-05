@@ -7,7 +7,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTIGNORE="exit:clear"
 
-export XDG_CONFIG_HOME XDG_CACHE_HOME
+export XDG_CONFIG_HOME XDG_CACHE_HOME GIT_CONFIG
 
 # Completion official documentations
 # https://zsh.sourceforge.io/Doc/Release/Completion-System.html#Completion-System
