@@ -89,7 +89,29 @@ precmd() {
 # PROMPTs
 # https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
 # -----------
-PROMPT='%F{195} %n%f%F{250} in%f%F{115} %1~ %f${vcs_info_msg_0_}
+# Function to detect OS and return icon
+get_os_icon() {
+  local os=$(uname -s)
+  if [[ "$os" == "Darwin" ]]; then
+    echo ""
+  elif [[ "$os" == "Linux" ]]; then
+    if [[ -f /etc/os-release ]]; then
+      if grep -qi 'arch' /etc/os-release; then
+        echo ""
+      else
+        echo "🐧"
+      fi
+    else
+      echo "🐧"
+    fi
+  else
+    echo "💻"
+  fi
+}
+# Assign icon to a variable
+OS_ICON=$(get_os_icon)
+
+PROMPT='%F{195}$(get_os_icon) %n%f%F{250} in%f%F{115} %1~ %f${vcs_info_msg_0_}
 %F{155}❯ %f'
 
 
