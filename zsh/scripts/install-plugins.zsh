@@ -25,7 +25,7 @@ for name in ${(k)repos}; do
     echo "$name already exists. Skipping clone."
   fi
 
-plugins_source="[[ -f \"\$ZDOTDIR/plugins/${name}.zsh\" ]] && source \"\$ZDOTDIR/plugins/${name}.zsh\""
+plugins_source="[[ -f \"\$ZDOTDIR/plugins/${name}/${name}.zsh\" ]] && source \"\$ZDOTDIR/plugins/${name}/${name}.zsh\""
 
 if ! grep -Fqx "$plugins_source" "$ZSHRC"; then
   echo "# Source $name" >> "$ZSHRC"
