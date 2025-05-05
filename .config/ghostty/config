@@ -1,12 +1,12 @@
-theme = catppuccin-mocha
+ theme = catppuccin-mocha
 
-background-blur = true
-background-opacity = 0.90
-background-blur-radius = 20
+ background-blur = true
+ background-opacity = 0.80
+# background-blur-radius = 20
 
 
 font-family = JetBrainsMono Nerd Font
-font-size = 20
+font-size = 16
 font-feature = -liga
 
 cursor-style = block
@@ -30,4 +30,3 @@ window-padding-balance = true
 
 # extras
 # shell-integration-features = no-cursor 
-copy-on-select = clipboard
