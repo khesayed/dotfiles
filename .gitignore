@@ -1,1 +1,41 @@
+# Ignore system-specific files
 .DS_Store
+Thumbs.db
+.Trash-*
+
+# Ignore backup and swap files
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore credentials and tokens
+*.pem
+*.key
+*.crt
+*.gpg
+*.env
+*.secrets
+
+# SSH and GPG sensitive info
+.ssh/
+.gnupg/
+
+# Local machine or package manager settings
+.local/
+.cache/
+.cargo/registry
+.npm/
+.python-history
+
+# History files (optional to ignore)
+.zsh_history
+.bash_history
+.fish_history
+
+# VSCode settings (optional, if not part of the dotfiles)
+.vscode/
+
+# Log files
+*.log
