@@ -63,16 +63,11 @@ setopt SHARE_HISTORY
 # Ignores commands start with space from history
 setopt HIST_IGNORE_SPACE
 setopt PROMPT_SUBST
+
 # -----------
 # ALIASES
 # -----------
-# [[ -f "$ZDOTDIR/aliases" ]] && source "$ZDOTDIR/aliases"
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias rm='rm -rf -i'
-alias v='vim'
-alias ll='ls -A -lh --color=always | awk '\''{printf "\033[0m%-10s %-20s %s\n", $5, $6" "$7" "$8, $9}'\'''
+[[ -f "$ZDOTDIR/aliases.sh" ]] && source "$ZDOTDIR/aliases.sh"
 
 # -----------
 # KEYBINDING
