@@ -2,6 +2,8 @@
 	name = Khalid A. Khalil
 	email = 1518813+khesayed@users.noreply.github.com
 [push]
-	autoSetupRemote = true
+    autoSetupRemote = true
+[pull]
+    rebase = true
 [core]
 	editor = vim
