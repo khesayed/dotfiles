@@ -1,8 +1,8 @@
- theme = catppuccin-mocha
+theme = catppuccin-mocha
 
 # Background 
 background-blur = true
- background-opacity = 0.80
+background-opacity = 0.80
 
 
 # Font
@@ -19,7 +19,6 @@ cursor-invert-fg-bg = true
 mouse-hide-while-typing = true
 
 # MacOS
-macos-titlebar-style = hidden
 macos-option-as-alt = true
 
 # Windows
