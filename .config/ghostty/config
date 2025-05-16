@@ -1,31 +1,36 @@
-theme = catppuccin-mocha
+# https://ghostty.org/docs/config/reference
+theme = Argonaut
 
 # Background 
-background-blur = true
-background-opacity = 0.80
+background-opacity = 0.95
 
 
 # Font
 font-family = JetBrainsMono Nerd Font
 font-size = 16
-font-feature = -liga
+font-feature = -calt, -liga, -dlig
 
 adjust-cell-height = 35%
 
 # Cursor
 cursor-style = block
 cursor-style-blink = true
-cursor-invert-fg-bg = true
 mouse-hide-while-typing = true
+cursor-color = #fff
 
 # MacOS
 macos-option-as-alt = true
 
-# Windows
+# Window
+# On mac to enable tabs change it to auto
 window-decoration = none
 window-padding-x = 10
 window-padding-y = 10
 window-padding-balance = true
+
+# Splits
+unfocused-split-opacity = 0.6
+split-divider-color=#222
 
 # Extra
 confirm-close-surface = false
