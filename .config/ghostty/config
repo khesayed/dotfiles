@@ -15,7 +15,6 @@ adjust-cell-height = 35%
 # Cursor
 cursor-style = block
 cursor-style-blink = true
-mouse-hide-while-typing = true
 cursor-color = #fff
 
 # MacOS
@@ -29,8 +28,10 @@ window-padding-y = 10
 window-padding-balance = true
 
 # Splits
-unfocused-split-opacity = 0.6
-split-divider-color=#222
+unfocused-split-opacity = 0.4
+split-divider-color = #555
 
 # Extra
 confirm-close-surface = false
+mouse-hide-while-typing = true
+
