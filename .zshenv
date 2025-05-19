@@ -10,3 +10,11 @@
 ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 NVM_DIR="$XDG_CONFIG_HOME/nvm"
 GIT_CONFIG="$XDG_CONFIG_HOME/git/.gitconfig"
+VIMINIT='source $XDG_CONFIG_HOME/vim/.vimrc'
+
+# The following have to go in .zprofile, because they are used by 
+# macOS's /etc/zshrc file, which is sourced _before_ your`.zshrc` 
+# file.
+SHELL_SESSION_DIR=$XDG_CACHE_HOME/zsh/sessions
+SHELL_SESSION_FILE=$SHELL_SESSION_DIR/$TERM_SESSION_ID
+
