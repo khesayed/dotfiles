@@ -7,7 +7,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTIGNORE="exit:clear"
 
-export XDG_CONFIG_HOME XDG_CACHE_HOME GIT_CONFIG
+export XDG_CONFIG_HOME XDG_CACHE_HOME GIT_CONFIG SHELL_SESSION_DIR SHELL_SESSION_FILE VIMINIT
 
 # Completion official documentations
 # https://zsh.sourceforge.io/Doc/Release/Completion-System.html#Completion-System
@@ -75,7 +75,6 @@ setopt PROMPT_SUBST
 # Activate vim mode
 #bindkey -v
 
-
 # Functions
 precmd() {
 	vcs_info
@@ -117,3 +116,7 @@ PROMPT='%F{195}$(get_os_icon) %n%f%F{250} in%f%F{115} %1~ %f${vcs_info_msg_0_}
 [[ -f "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 # Source zsh-syntax-highlighting
 [[ -f "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && source "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
