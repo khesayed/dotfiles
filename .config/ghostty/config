@@ -1,8 +1,6 @@
-# https://ghostty.org/docs/config/reference
-theme = Argonaut
+theme = challengerdeep
 
-# Background 
-background-opacity = 0.95
+background-opacity = 0.97
 
 
 # Font
@@ -11,27 +9,16 @@ font-size = 16
 font-feature = -calt, -liga, -dlig
 
 adjust-cell-height = 35%
+unfocused-split-opacity = 0.4
 
 # Cursor
 cursor-style = block
 cursor-style-blink = true
 cursor-color = #fff
 
-# MacOS
-macos-option-as-alt = true
-
-# Window
-# On mac to enable tabs change it to auto
-window-decoration = none
+# window-decoration = none
 window-padding-x = 10
 window-padding-y = 10
 window-padding-balance = true
-
-# Splits
-unfocused-split-opacity = 0.4
-split-divider-color = #555
-
-# Extra
-confirm-close-surface = false
+split-divider-color = #fff
 mouse-hide-while-typing = true
-
