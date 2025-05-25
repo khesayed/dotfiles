@@ -11,7 +11,7 @@ ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 NVM_DIR="$XDG_CONFIG_HOME/nvm"
 GIT_CONFIG="$XDG_CONFIG_HOME/git/.gitconfig"
 VIMINIT='source $XDG_CONFIG_HOME/vim/.vimrc'
-FONTCONFIG_FILE="$XDG_CONFIG_HOME/.config/fontconfig/fonts.conf"
+FONTCONFIG_FILE="$XDG_CONFIG_HOME/fontconfig/fonts.conf"
 
 # The following have to go in .zprofile, because they are used by 
 # macOS's /etc/zshrc file, which is sourced _before_ your`.zshrc` 
